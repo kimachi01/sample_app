@@ -6,6 +6,8 @@ ruby '2.0.0'
 #gem 'rails', '4.1.8'
 gem 'rails', '4.0.5'
 #gem 'pg', '0.15.1'
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'sprockets', '2.11.0'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -32,7 +34,8 @@ gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+gem 'therubyracer',  platforms: :ruby
+gem 'execjs'
 
 # Use jquery as the JavaScript library
 #gem 'jquery-rails'
