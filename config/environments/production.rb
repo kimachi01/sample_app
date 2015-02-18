@@ -70,10 +70,6 @@ SampleApp::Application.configure do
 	# Use default logging formatter so that PID and timestamp are not suppressed.
 	config.log_formatter = ::Logger::Formatter.new
 
-	<% unless options.skip_active_record? %>
 	# Do not dump schema after migrations.
 	config.active_record.dump_schema_after_migration = false
-	<% end %>
-# Do not dump schema after migrations.
-#	config.active_record.dump_schema_after_migration = false
 end
