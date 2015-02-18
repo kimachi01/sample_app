@@ -35,9 +35,9 @@ end
 
 def make_relationships
 	users = User.all
-	user = user.first
+	user = users.first
 	followed_users = users[2..50]
-	followers = users[3..40]
+	follower = users[3..40]
 	followed_users.each {|followed| user.follow!(followed)}
-	followers.each {|follower| follower.follow!(user)}
+	follower.each {|follower| follower.follow!(user)}
 end
